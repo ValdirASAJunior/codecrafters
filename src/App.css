@@ -1,38 +1,82 @@
+body {
+  background-color: #5426B8;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* BARRA DE NAVEGAÇÃO */
+
+.Navbar {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+header {
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 8vh;
 }
 
-.App-link {
-  color: #61dafb;
+.busca {
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  height: 45%;
+  width: 40%;
+  align-content: center;
+  text-align: left;
+  grid-column: 4 / span 6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border: none;
+  outline: none;
+  background-color: #f3f3f3;
+  margin-left: 3%;
+  height: 70%;
+  width: 93%;
+}
+
+input:hover {
+  background-color: #dddddd;
+  border-radius: 30px;
+}
+
+.buscar {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  height: 45%;
+  width: 4%;
+  align-content: center;
+  grid-column: 6;
+  margin-left: 50%;
+}
+
+.buscar > img {
+  max-width: 27%;
+  opacity: 60%;
+}
+
+.buscar > img:hover {
+  cursor: pointer;
+}
+
+.buscar:hover {
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  height: 45%;
+  width: 3%;
+  align-content: center;
+  grid-column: 9;
+}
+
+.menu > img {
+  max-width: 60%;
+  opacity: 60%;
 }
