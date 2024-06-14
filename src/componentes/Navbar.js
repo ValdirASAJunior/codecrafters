@@ -14,12 +14,12 @@ function Navbar() {
               <img src={lupa} alt="Pesquisa"/>
             </div>
 
-            <div class="menu">
+            <div id="dropdownBtn" class="menu">
               <img src={menu} alt="Menu"/>
             </div>
         </header>
       </div>
     );
   }
-
+  
   export default Navbar;
