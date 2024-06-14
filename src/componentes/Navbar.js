@@ -14,8 +14,13 @@ function Navbar() {
               <img src={lupa} alt="Pesquisa"/>
             </div>
 
-            <div id="dropdownBtn" class="menu">
-              <img src={menu} alt="Menu"/>
+            <div class="menu">
+              <button id="dropdownBtn"><img src={menu} alt="Menu"/></button>
+              <div id="myDropdown" class="menu-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             </div>
         </header>
       </div>
