@@ -4,11 +4,6 @@ import menu from "../imagens/menu.png";
 
 function Navbar() {
 
-  document.getElementById("dropdownBtn").addEventListener('click', function() {
-    var conteudo = document.getElementById("myDropdown");
-    conteudo.classList.toggle("show");
-  });
-
   return (
     <div className="Navbar">
       <header>
