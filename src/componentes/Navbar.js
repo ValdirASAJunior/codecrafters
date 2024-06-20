@@ -1,30 +1,40 @@
 import React from "react";
-import lupa from "../imagens/lupa.png"
-import menu from "../imagens/menu.png"
+import lupa from "../imagens/lupa.png";
+import menu from "../imagens/menu.png";
 
 function Navbar() {
-    return (
-      <div className="Navbar">
-        <header>
-            <div class="busca">
-                <input type="text"/>
-            </div>
 
-            <div class="buscar">
-              <img src={lupa} alt="Pesquisa"/>
-            </div>
+  document.getElementById("dropdownBtn").addEventListener('click', function() {
+    var conteudo = document.getElementById("myDropdown");
+    conteudo.classList.toggle("show");
+  });
 
-            <div class="menu">
-              <button id="dropdownBtn"><img src={menu} alt="Menu"/></button>
-              <div id="myDropdown" class="menu-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
-        </header>
-      </div>
-    );
-  }
-  
-  export default Navbar;
+  return (
+    <div className="Navbar">
+      <header>
+        <div className="busca">
+          <input type="text" />
+        </div>
+
+        <div className="buscar">
+          <img src={lupa} alt="Pesquisa" />
+        </div>
+
+        <div className="menu">
+          <button id="dropdownBtn">
+            <img src={menu} alt="Menu" />
+          </button>
+
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
+
+}
+
+export default Navbar;
