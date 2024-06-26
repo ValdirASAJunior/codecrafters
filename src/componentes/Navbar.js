@@ -4,6 +4,11 @@ import menu from "../imagens/menu.png";
 
 function Navbar() {
 
+  function dropdown() {
+    var dropContent = document.getElementById("myDropdown");
+    dropContent.classList.toggle("show");
+  }
+
   return (
     <div className="Navbar">
       <header>
@@ -15,16 +20,14 @@ function Navbar() {
           <img src={lupa} alt="Pesquisa" />
         </div>
 
-        <div className="menu">
-          <button id="dropdownBtn">
-            <img src={menu} alt="Menu" />
-          </button>
+        <button id="dropdownBtn" onClick={dropdown}>
+            <img src={menu} />
+        </button>
 
-          <div id="myDropdown" class="dropdown-content">
+        <div id="myDropdown" class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
-          </div>
         </div>
       </header>
     </div>

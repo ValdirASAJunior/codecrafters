@@ -9,8 +9,8 @@ function Titulo() {
         <div class="devs">
           <p class="txtEquipe">Equipe</p>
           <div class="caixaEquipe"></div>
-          <div class="setaECaixa"></div>
-          <div class="setaDCaixa"></div>
+          <button class="setaECaixa"></button>
+          <button class="setaDCaixa"></button>
           <div class="nomeCaixa"><p>Nome</p></div>
         </div>
       </div>
