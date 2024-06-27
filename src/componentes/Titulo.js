@@ -1,6 +1,4 @@
 import React from "react";
-import goodra from "../imagens/Goodra.webp";
-import ditto from "../imagens/ditto.jpg";
 
 function Titulo() {
 
@@ -16,7 +14,7 @@ function Titulo() {
         dev.className = "devs";
         btnEsq.classList.toggle("show2");
         btnDir.classList.toggle("hide");
-        nome.innerHTML = "Goodra";
+        nome.innerHTML = "GOODRA";
       }
     };
 
@@ -32,7 +30,7 @@ function Titulo() {
             dev.className = "dev2";
             btnEsq.classList.toggle("show2");
             btnDir.classList.toggle("hide");
-            nome.innerHTML = "Ditto";
+            nome.innerHTML = "DITTO";
           } 
         };
 
@@ -46,7 +44,7 @@ function Titulo() {
           <div class="caixaEquipe"></div>
           <button class="setaECaixa" id="trocarFundo" onClick={TrocarE}></button>
           <button class="setaDCaixa" id="trocarFundo2" onClick={TrocarD}></button>
-          <div class="nomeCaixa"><p id="Nome">Goodra</p></div>
+          <div class="nomeCaixa"><p id="Nome">GOODRA</p></div>
         </div>
       </div>
     );
