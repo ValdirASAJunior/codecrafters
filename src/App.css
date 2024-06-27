@@ -200,18 +200,17 @@ input:hover {
 .nomeCaixa {
   grid-column: 2 / 2 span;
   grid-row: 4;
+  min-width: fit-content;
   color: #ffffff;
-  margin: auto;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
   font-family: "Lexend", sans-serif;
 }
 
 #Nome {
   color: #f3f3f3;
-  background-color: rgb(155, 108, 255);
-  width: 130%;
-  height: 150%;
+  background-color: rgba(155, 108, 255, 0.7);
   border-radius: 10px;
+  border: solid 1px rgba(255, 255, 255, 0.7)
 }
 
 /* DROPDOWN */
@@ -295,7 +294,7 @@ input:hover {
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 12.5% 75% 12.5%;
+  grid-template-rows: 12.5% 87.5%;
 }
 
 .caixaTexto2 {
@@ -311,4 +310,46 @@ input:hover {
   grid-column: 3;
   grid-row: 1;
   box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+.jogo1 {
+  grid-column: 1 / 2 span;
+  grid-row: 2;
+  width: 70%;
+  height: 73.96%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+}
+
+.jogo1 {
+  cursor: pointer;
+}
+
+.jogo2 {
+  grid-column: 3 / 2 span;
+  grid-row: 2;
+  width: 70%;
+  height: 73.96%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+}
+
+.jogo2 {
+  cursor: pointer;
+}
+
+.jogo3 {
+  grid-column: 5 / 2 span;
+  grid-row: 2;
+  width: 70%;
+  height: 73.96%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+}
+
+.jogo3 {
+  cursor: pointer;
 }
