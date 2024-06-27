@@ -8,6 +8,7 @@ function Titulo() {
     const dev = document.getElementById("caixaDevs");
     const btnEsq = document.getElementById("trocarFundo");
     const btnDir = document.getElementById("trocarFundo2");
+    const nome = document.getElementById("Nome");
 
       // Verifica qual é o plano de fundo atual e alterna para o próximo
       if (dev.className = "dev2") 
@@ -15,6 +16,7 @@ function Titulo() {
         dev.className = "devs";
         btnEsq.classList.toggle("show2");
         btnDir.classList.toggle("hide");
+        nome.innerHTML = "Goodra";
       }
     };
 
@@ -22,6 +24,7 @@ function Titulo() {
       const dev = document.getElementById("caixaDevs");
       const btnEsq = document.getElementById("trocarFundo");
       const btnDir = document.getElementById("trocarFundo2");
+      const nome = document.getElementById("Nome");
   
         // Verifica qual é o plano de fundo atual e alterna para o próximo
         if (dev.className = "devs") 
@@ -29,6 +32,7 @@ function Titulo() {
             dev.className = "dev2";
             btnEsq.classList.toggle("show2");
             btnDir.classList.toggle("hide");
+            nome.innerHTML = "Ditto";
           } 
         };
 
@@ -42,7 +46,7 @@ function Titulo() {
           <div class="caixaEquipe"></div>
           <button class="setaECaixa" id="trocarFundo" onClick={TrocarE}></button>
           <button class="setaDCaixa" id="trocarFundo2" onClick={TrocarD}></button>
-          <div class="nomeCaixa"><p>Nome</p></div>
+          <div class="nomeCaixa"><p id="Nome">Goodra</p></div>
         </div>
       </div>
     );
