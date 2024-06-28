@@ -22,6 +22,16 @@ function Projetos() {
     j2.classList.remove("show3");
   }
 
+  function j3(){
+    const j3 = document.getElementById("jogo3");
+    j3.classList.add("show3");
+  }
+
+  function j3Out(){
+    const j3 = document.getElementById("jogo3");
+    j3.classList.remove("show3");
+  }
+
     return (
       <div className="Projetos">
         <div class="caixaOpacidade">
@@ -39,8 +49,11 @@ function Projetos() {
             </div>
           </div>
 
-          <div class="jogo2"></div>
-          <div class="jogo3"></div>
+          <div class="jogo3" onMouseOver={j3} onMouseOut={j3Out}>
+          <div class="infoJ3" id="jogo3" >
+              <p>Em Breve...</p>
+            </div>
+          </div>
         </div>
       </div>
     );
