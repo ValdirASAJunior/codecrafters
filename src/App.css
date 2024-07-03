@@ -91,6 +91,7 @@ input:hover {
 
 .buscaDown > p {
   margin: 0;
+  font-size: 80%;
 }
 
 /* TITULO */
@@ -109,7 +110,11 @@ input:hover {
   height: 70%;
   width: 100%;
   grid-column: 2;
-  transition: background-color ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.logo:hover {
+  scale: 1.2;
 }
 
 .devs {
@@ -120,7 +125,7 @@ input:hover {
   height: 90%;
   width: 80%;
   grid-column: 4;
-  transition: background-color ease 0.3s;
+  transition: background-image ease 0.3s;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -335,10 +340,12 @@ input:hover {
   color: #ffffff;
   background-image: url(imagens/icon-tech-tales.jpg);
   background-size: cover;
+  transition: scale ease 0.3s;
 }
 
 .jogo1:hover {
   cursor: pointer;
+  scale: 1.1;
 }
 
 .jogo2 {
@@ -349,10 +356,12 @@ input:hover {
   margin: auto;
   border-radius: 20px;
   background-color: #f3f3f3;
+  transition: scale ease 0.3s;
 }
 
 .jogo2:hover {
   cursor: pointer;
+  scale: 1.1;
 }
 
 .jogo3 {
@@ -363,10 +372,12 @@ input:hover {
   margin: auto;
   border-radius: 20px;
   background-color: #f3f3f3;
+  transition: scale ease 0.3s;
 }
 
 .jogo3:hover {
   cursor: pointer;
+  scale: 1.1;
 }
 
 .infoJ1 {
