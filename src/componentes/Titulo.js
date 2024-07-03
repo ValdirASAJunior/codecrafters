@@ -14,7 +14,7 @@ function Titulo() {
         dev.className = "devs";
         btnEsq.classList.toggle("show2");
         btnDir.classList.toggle("hide");
-        nome.innerHTML = "GOODRA";
+        nome.innerHTML = "THALIA";
       }
     };
 
@@ -30,7 +30,7 @@ function Titulo() {
             dev.className = "dev2";
             btnEsq.classList.toggle("show2");
             btnDir.classList.toggle("hide");
-            nome.innerHTML = "DITTO";
+            nome.innerHTML = "VALDIR";
           } 
         };
 
@@ -44,7 +44,7 @@ function Titulo() {
           <div class="caixaEquipe"></div>
           <button class="setaECaixa" id="trocarFundo" onClick={TrocarE}></button>
           <button class="setaDCaixa" id="trocarFundo2" onClick={TrocarD}></button>
-          <div class="nomeCaixa"><p id="Nome">GOODRA</p></div>
+          <div class="nomeCaixa"><p id="Nome">THALIA</p></div>
         </div>
       </div>
     );

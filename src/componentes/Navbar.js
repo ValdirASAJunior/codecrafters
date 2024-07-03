@@ -9,6 +9,15 @@ function Navbar() {
     dropContent.classList.toggle("show");
   }
 
+  window.onclick = function(event){
+    if (!event.target.matches('.dropBtn') && !event.target.matches('#imgMenu')) {
+      var dropdowns = document.getElementById("myDropdown");
+        if (dropdowns.classList.contains('show')) {
+          dropdowns.classList.remove('show');
+        }
+    }
+  }
+
   function noneJogo(){
     const txt = document.getElementById("txtBusca").value;
     const none = document.getElementById("noneBusca");
@@ -44,8 +53,8 @@ function Navbar() {
             <p>Nenhum jogo encontrado.</p>
         </div>
 
-        <button id="dropdownBtn" onClick={dropdown}>
-            <img src={menu} />
+        <button id="dropdownBtn" class="dropBtn" onClick={dropdown}>
+            <img src={menu} id="imgMenu"/>
         </button>
 
         <div id="myDropdown" class="dropdown-content">
