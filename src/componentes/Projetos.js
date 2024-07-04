@@ -35,7 +35,7 @@ function Projetos() {
     return (
       <div className="Projetos">
         <div class="caixaOpacidade">
-          <div class="caixaTexto2"><p>Projetos</p></div>
+          <div class="caixaTexto2" id="projetos"><p>Projetos</p></div>
 
           <div class="jogo1" onMouseOver={tech} onMouseOut={techOut}>
             <div class="infoJ1" id="jogoReal" >

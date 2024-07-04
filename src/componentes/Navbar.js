@@ -58,9 +58,9 @@ function Navbar() {
         </button>
 
         <div id="myDropdown" class="dropdown-content">
-            <a href="#">Início</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Contato</a>
+            <a href="#inicio">Início</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#footer">Contato</a>
         </div>
 
       </header>
